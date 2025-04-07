@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:untitled2/catogaries.dart';
 import 'package:untitled2/data%20table.dart';
+import 'package:untitled2/front.dart';
 import 'package:untitled2/mobiletask.dart';
 import 'package:untitled2/routing.dart';
 
@@ -14,9 +16,8 @@ class _BottomnavigationbarState extends
     State<Bottomnavigationbar>{
   int selectBottomnavVal=0;
   List pages =[
-    Routing(),
-    Datatable(),
-    Mobiletask()
+    Front(),
+    Catogaries()
   ];
   Widget build(BuildContext context){
     return
@@ -28,8 +29,8 @@ class _BottomnavigationbarState extends
             items: [
               BottomNavigationBarItem(icon: Icon(Icons.home),
               label: "HOME"),
-              BottomNavigationBarItem(icon: Icon(Icons.person),
-                  label: "PROFILE"),
+              BottomNavigationBarItem(icon: Icon(Icons.add_shopping_cart_rounded),
+                  label: "Catogaries"),
               BottomNavigationBarItem(icon: Icon(Icons.settings),
                   label: "SETTING"),
             ],

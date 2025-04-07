@@ -2,7 +2,7 @@ import 'dart:async';
 
 
 import 'package:flutter/material.dart';
-import 'package:untitled2/bottomnavigationbar.dart';
+import 'package:untitled2/pageview.dart';
 
 class Screensplash extends StatefulWidget{
   @override
@@ -15,8 +15,8 @@ class _ScreensplashState extends State<Screensplash> {
   void initState() {
     super.initState();
 
-    Timer(Duration(seconds: 4),(){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Bottomnavigationbar()));
+    Timer(Duration(seconds: 3),(){
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Pageview()));
     });
   }
 

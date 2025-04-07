@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:untitled2/Button_task.dart';
+import 'package:untitled2/registration.dart';
 import 'package:untitled2/registrationform.dart';
 
 import 'bottomnavigationbar.dart';
+import 'catogaries.dart';
 import 'data table.dart';
+import 'front.dart';
+import 'loginpage.dart';
 import 'mobiletask.dart';
+import 'pageview.dart';
 import 'routing.dart';
 import 'screensplash.dart';
 
